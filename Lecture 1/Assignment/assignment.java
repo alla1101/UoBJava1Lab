@@ -12,6 +12,7 @@ public class assignment {
             y=scanner.nextDouble();
             
         }catch(Exception inputError){
+
             System.out.println("Input is not Supported");
             System.exit(1);
         }
@@ -23,6 +24,14 @@ public class assignment {
         System.out.println("x-y="+result);
         result=x*y;
         System.out.println("x*y="+result);
+        
+        result=x/y;
+        
+        if(Double.isInfinite(x/y)){
+            System.out.println("x/y= undefined");
+        }else{
+            System.out.println("x/y="+result);
+        }
         
         if(y < -0.00001 || y > 0.00001 ){
             result=x/y;
